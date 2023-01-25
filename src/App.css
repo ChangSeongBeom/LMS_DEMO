@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
-}
+.main{
+  width: 100%;
+  height: 240px;
+  background-color: black;
+  background-image: url('./wall.jpg'); 
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sub-class{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  margin-top:10px;
+}
+
+.col-md-4{
+  border: 1px solid black;
+}
+.moreup{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin:10px;
+}
+.more{
+  color: black;
+}
+.goLearningBody{
+
+ height: 100%;
+ display: flex;
+ flex-direction: column;
+ margin: 10px;
+ padding:10px;
+
+}
+.goLearning{
+
+  font-size: large;
+
 }
 
-.App-link {
-  color: #61dafb;
+.player{
+  display: flex;
+  align-items: center;
+  margin-top:0px;
+  width:100%;
+  margin-top:10px;
+  margin-right:50px;
+  margin-left:50px;
+  background-color: #f0f1f4;
+  justify-content: center;
+  flex-direction: column;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.video{
+  
+  text-align: center;
+  padding-left:10px;
+  padding-right:10px;
+}
+.footDiv{
+  display: flex;
+
+}
+.titleDiv{
+  margin-left: 50px;
+  margin-right: 70px;
+
+  width: 100%;
+  background-color: aliceblue;
+}
+
+.mb-3{
+  padding-left: 10px;
+}
+
+.commentOuter{
+  display: flex;
+  flex-direction: row;
+}
+
+.commentText{
+  flex:9
+}
+.commentButton{
+  text-align: center;
+  flex:1;
+  margin-left:20px;
+}
+
+
+.alertButton{
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-end
+}
+.commentArea{
+  flex:9
+}
+.deleteButton{
+  flex:1
+  
 }

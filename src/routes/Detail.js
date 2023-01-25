@@ -21,6 +21,7 @@ function Detail({learning}) {
     let [register,setRegister]=useState(false);
     let [inputValue,setInputValue]=useState('');
   
+   
   return (
         <div className='player-outer'>
             <div className='player'>  
@@ -52,8 +53,10 @@ function Detail({learning}) {
                     <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
                     <Form.Label  column sm={5}></Form.Label>
                     <Col sm={10} className="commentOuter">
-                    <Form.Control className="commentText" type="comment" placeholder="댓글을 남겨주세요" onChange={(e)=>{
-                        setInputValue(e.target.value);
+                    <Form.Control className="commentText" type="comment" placeholder="댓글을 남겨주세요" onKeyPress={e => {
+                        if (e.key === 'Enter'){alert("엔터 못쳐요~"); e.preventDefault();}}}  onChange={(e)=>{
+                            setInputValue(e.target.value);
+                        
                     }}/>
                     <Button className="commentButton" variant="primary" onClick={(e)=>{
                         
